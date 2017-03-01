@@ -27,8 +27,11 @@ services:
     # if using Docker Hub, leave "build: ./" commented out.
     # if you want to build an image locally, uncomment it.
 
-    # build: ./
-    image: YourDockerUsername/YourRepo:latest
+    build: 
+      context: .
+      args:
+        SRC: ${APP_SRC}
+    #image: YourDockerUsername/YourRepo:latest
     environment:
       DATABASE_URL: "postgres://${PG_USER}:${PG_PASSWORD}@database/${PG_DATABASE}"
       OTREE_ADMIN_PASSWORD: ${OTREE_ADMIN_PASSWORD}
