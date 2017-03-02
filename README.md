@@ -23,7 +23,7 @@ Then clone(or copy) your otree porject in inside it. And make sure it renamed to
 To start otree services, use [Docker-Compose](https://docs.docker.com/compose/) in the root directory
 that contains the provided `docker-compose.yml`:
 
-    docker-compose up
+    docker-compose up --build -d
 
 This will launch your otree site on port 80(default). If you want custom
 the otree settings, see [*Configuration*](#configuration).
