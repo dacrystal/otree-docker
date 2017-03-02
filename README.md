@@ -1,10 +1,10 @@
 
 # Otree Docker Image
 This docker image is for otree application.
-It will automatically install application requirements speficed in requirements files. 
+It will automatically install application requirements specified in requirements files. 
 Also, it will do a `resetdb` for the first time.
 
-*Note: for non-`docker-compose` user* : The image doesn't contain a database so you have to create a seperate database
+*Note: for non-`docker-compose` user* : The image doesn't contain a database so you have to create a separate database
 container (which is no effort if you use the provided configuration for
 *docker-compose*) and link this container or pass the database information.
 
@@ -15,7 +15,7 @@ First clone(download) this repo:
 
     git clone https://github.com/dacrystal/otree-docker <unique-project-name> && cd <unique-project-name>
 
-Then clone(or copy) your otree porject in inside it. And make sure it renamed to `app` (see [*Configuration: APP_SRC*](#configuration)):
+Then clone(or copy) your otree project in inside it. And make sure it renamed to `app` (see [*Configuration: APP_SRC*](#configuration)):
 
     git clone <your-otree-project-repo> app
     
@@ -61,9 +61,9 @@ docker-compose down -v
 ```
 
 
-## Addtional python modules
+## Additional python modules
 
-All addtional python module shuold be add to requirements.txt in you otree porject.
+All additional python module should be add to requirements.txt in you otree project.
 
 
 ## Configuration 
@@ -80,7 +80,7 @@ All addtional python module shuold be add to requirements.txt in you otree porje
     - `OTREE_AUTH_LEVEL`
 
 ### Other (.env file) options
-    - `APP_SRC` relative path to otree project (defualt: 'app')
+    - `APP_SRC` relative path to otree project (default: 'app')
 
 
 ## Links
